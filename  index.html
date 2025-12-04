@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlantMe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <img src="assets/icons/Logo.svg" alt="PlantMe logo" width="34" height="34" />
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact Us</a>
+          <a href="#blog">Blog</a>
+          <a href="#sitemap">Site Map</a>
+          <select aria-label="Select language">
+            <option>Eng</option>
+            <option>Ua</option>
+            <option>Pl</option>
+          </select>
+        </div>
+        <form class="search-form" role="search" aria-label="Site search">
+          <input type="search" placeholder="Search this site" aria-label="Search field" />
+          <button type="submit" aria-label="Search">
+            <img src="assets/icons/Search.svg" alt="Search button" width="34" height="34" />
+          </button>
+        </form>
+      </nav>
+    </header>
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-text">
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <h2>Lorem ipsum dolor sit amet</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus. Senectus sed maecenas
+            viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam
+            amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <button class="hero-btn" aria-label="Buy now button">Buy Now</button>
+        </div>
+        <img src="assets/images/hero-leaves.png" alt="Close-up of tropical green leaves" class="hero-image" />
+      </section>
+      <section id="about" class="about">
+        <article class="about-article">
+          <img src="assets/images/about-us-leaves.png" alt="Tropical leaves background" class="about-image" />
+          <div class="about-text">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus. Senectus sed maecenas
+              viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam
+              amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Eleifend tincidunt posuere eu risus cursus.
+            </p>
+            <a href="#" class="link">Learn more about →</a>
+          </div>
+        </article>
+        <article class="about-article">
+          <img src="assets/images/about-us-leaves.png" alt="Tropical plant leaves with water drops" class="about-image" />
+          <div class="about-text">
+            <h2>About Us 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus. Senectus sed maecenas
+              viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam
+              amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Eleifend tincidunt posuere eu risus cursus.
+            </p>
+            <a href="#" class="link">Learn more about →</a>
+          </div>
+        </article>
+      </section>
+      <section id="contact" class="contact">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="info-content">
+              <h2>Contact Us</h2>
+              <p>Fill up the form and ur Team will get back to you within 24 hours. Happy to see your message!</p>
+              <ul>
+                <li><img src="assets/icons/Facebook.svg" alt="Facebook" width="24" />+380 915 32 456</li>
+                <li><img src="assets/icons/Facebook.svg" alt="Facebook" width="24" />example@gmail.com</li>
+                <li><img src="assets/icons/Facebook.svg" alt="Facebook" width="24" />Pidmurma 5a, Lviv</li>
+              </ul>
+            </div>
+            <div class="info-socials">
+              <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <img src="assets/icons/Facebook.svg" alt="Facebook" />
+              </a>
+              <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <img src="assets/icons/Facebook.svg" alt="Facebook" />
+              </a>
+              <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <img src="assets/icons/Facebook.svg" alt="Facebook" />
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name"><span class="required">*</span>First Name</label>
+                <input id="first-name" type="text" required placeholder="John" />
+              </div>
+              <div class="form-group">
+                <label for="last-name"><span class="required">*</span>Last Name</label>
+                <input id="last-name" type="text" required placeholder="Doe" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="example@gmail.com" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input id="phone" type="tel" pattern="[0-9\s\+]+" placeholder="+380 00 000 00 00" />
+              </div>
+            </div>
+            <fieldset class="form-radio">
+              <label><input type="radio" name="role" />UI Developer</label>
+              <label><input type="radio" name="role" />UI/UX Designer</label>
+              <label><input type="radio" name="role" />Accessibility Expert</label>
+              <label><input type="radio" name="role" />QA Engineer</label>
+              <label><input type="radio" name="role" />Other</label>
+            </fieldset>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Text here..."></textarea>
+            </div>
+            <div class="form-checks">
+              <label><input type="checkbox" required />Accept the Terms</label>
+              <label><input type="checkbox" required />Accept the Terms 2</label>
+            </div>
+            <button type="submit" class="btn" aria-label="Send message">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <section class="footer-newsletter">
+          <h3>PlantMe</h3>
+          <p>Subscribe and be the first to know about our news and promotions.</p>
+          <form>
+            <input type="email" placeholder="example@gmail.com" aria-label="Enter your email to subscribe" />
+            <button class="btn">Subscribe</button>
+          </form>
+        </section>
+        <section class="footer-links">
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact Us</a>
+          <a href="#blog">Blog</a>
+          <a href="#sitemap">Site Map</a>
+        </section>
+        <section class="footer-contacts">
+          <h3>Contacts</h3>
+          <p>+38 063 072 0121</p>
+          <p>plantme.store@gmail.com</p>
+          <div>
+            <img src="assets/icons/Visa.svg" alt="Visa" />
+            <img src="assets/icons/Mastercard.svg" alt="Mastercard" />
+          </div>
+        </section>
+      </div>
+      <section class="footer-bottom">
+        <div class="footer-left"></div>
+        <p class="footer-center">© 2025 PlantMe. All Rights Reserved</p>
+        <div class="footer-right">
+          <p>Privacy Policy</p>
+          <p>Terms of service</p>
+          <p>Language</p>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
