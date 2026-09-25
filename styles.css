@@ -84,10 +84,13 @@ input {
   border: none;
 }
 .nav a:hover,
-.nav button:hover,
-.nav select:focus {
+.nav button:hover {
   outline: none;
   color: var(--dark-green);
+}
+.nav select:focus-visible {
+  outline: 2px solid var(--dark-green);
+  outline-offset: 2px;
 }
 .search-form {
   display: flex;
@@ -259,6 +262,17 @@ input {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+}
+.contact-info li a {
+  color: var(--black);
+  text-decoration: none;
+}
+.contact-info li a:hover {
+  text-decoration: underline;
+}
+.contact-info li a:focus-visible {
+  outline: 2px solid var(--dark-green);
+  outline-offset: 2px;
 }
 .info-socials {
   display: flex;
@@ -437,8 +451,11 @@ textarea::placeholder {
   font-weight: 400;
   line-height: 100%;
 }
-.footer-newsletter input:focus {
-  outline: none;
+.footer-newsletter input:focus-visible,
+.form-radio input:focus-visible,
+.form-checks input:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
 }
 .footer-newsletter button {
   border-radius: 2px;
@@ -469,8 +486,16 @@ textarea::placeholder {
   font-weight: 400;
   font-size: 1.1rem;
 }
-.footer-contacts p {
+.footer-contacts a {
   color: var(--grey);
+  text-decoration: none;
+}
+.footer-contacts a:hover {
+  text-decoration: underline;
+}
+.footer-contacts a:focus-visible {
+  outline: 2px solid var(--dark-green);
+  outline-offset: 2px;
 }
 .footer-contacts div {
   display: flex;
